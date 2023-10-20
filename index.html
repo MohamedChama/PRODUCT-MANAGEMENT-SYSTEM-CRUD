@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>Cruds</h2>
+            <p id="parag">PRODUCT MANAGEMENT SYSTEM CREATED BY <span id="myname">"MOHAMED CHAMA"</span> </p>
+        </div>
+
+        <div class="inputs">
+            <input placeholder="Title" type="text" id="title">
+            <div class="price">
+                <input onkeyup="getTotale()" type="number" id="price" placeholder="Price">
+                <input onkeyup="getTotale()" type="number" id="taxes" placeholder="Taxes">
+                <input onkeyup="getTotale()" type="number" id="ads" placeholder="ADS">
+                <input onkeyup="getTotale()" type="number" id="discount" placeholder="Discount">
+                <small id="total"></small>
+            </div>
+            <input placeholder="Category" type="text" id="category">
+            <button id="submit">Create</button>
+
+        </div>
+
+        <div class="outputs">
+            <div class="searchBlock">
+                <input onkeyup="srearchdata(this.value)" type="text" id="scearch" placeholder="Search by Title">
+
+            </div>
+
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Taxes</th>
+                    <th>Ads</th>
+                    <th>Discount</th>
+                    <th>Totale</th>
+                    <th>Category</th>
+                    <th>Update</th>
+                    <th>Delet</th>
+                </tr>
+
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
